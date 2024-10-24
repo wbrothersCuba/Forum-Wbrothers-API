@@ -208,7 +208,8 @@ var controller = {
         }
         //Get name and extension
         var file_path = req.file.path;
-        var file_split = file_path.split('\\');
+        //var file_split = file_path.split('\\'); for windows
+        var file_split = file_path.split('/'); // linux or mac
         var file_name = file_split[2];
         var ext_split = file_name.split('\.');
         var file_ext = ext_split[1];
