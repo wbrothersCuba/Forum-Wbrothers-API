@@ -199,14 +199,15 @@ var controller = {
     uploadAvatar: function (req, res) {
         // config multiparty mode (md)
         var file_name = 'Sin Avatar';
-        if (!req.files) {
+
+        if (!req.file) {
             return res.status(404).send({
                 status: 'error',
                 message: file_name
             });
         }
         //Get name and extension
-        var file_path = req.files.file0.path;
+        var file_path = req.file.path;
         var file_split = file_path.split('\\');
         var file_name = file_split[2];
         var ext_split = file_name.split('\.');
