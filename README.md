@@ -6,7 +6,7 @@
 https://wbrothers-forum-angular.netlify.app/ 
 
 - Backend
-https://github.com/wbrothersCuba/wbrothers-forum-angular
+https://forum-wbrothers-api-production.up.railway.app/ 
 
 This RESTful API is generated with Express and Nodejs, for a programming forum. Uses MONGO for the DB so the env variables should be adjusted: 
 
